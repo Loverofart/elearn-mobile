@@ -9,8 +9,8 @@ export default class Login extends React.Component{
         return(
             <View style={{backgroundColor:"#FFF",height:"100%"}}>
                 <Image source ={require('../images/10.png')}
-                    style={{width:"100%",height:"50%"}}
-                />
+                    style={{width:"100%",height:"50%"}}/>
+
                 <Text
                  style={{
                      fontSize:20,
@@ -37,7 +37,7 @@ export default class Login extends React.Component{
                     alignItems:"center",
                     marginHorizontal:50,
                     borderWidth:2,
-                    marginTop:50,
+                    marginTop:30,
                     paddingHorizontal:10,
                     borderColor:'rgb(63, 73, 152)',
                     borderRadius:23,
@@ -45,6 +45,9 @@ export default class Login extends React.Component{
                 }}>
                     <Icon name="mail" color='rgb(63, 73, 152)' size={24}/>
                     <TextInput 
+                        secureTextEntry
+                        placeholder="Имейл хаяг"
+                        placeholderTextColor='rgb(63, 73, 152)'
                         style={{paddingHorizontal:10}}
                     />
 
@@ -64,6 +67,9 @@ export default class Login extends React.Component{
                 }}>
                     <Icon name="key" color='rgb(63, 73, 152)' size={24}/>
                     <TextInput 
+                        secureTextEntry
+                        placeholder="Нууц үг"
+                        placeholderTextColor='rgb(63, 73, 152)'
                         style={{paddingHorizontal:10}}
                     />
 
@@ -76,8 +82,8 @@ export default class Login extends React.Component{
                     marginHorizontal:50,
                     alignItems:"center",
                     justifyContent:"center",
-                    marginTop:30,
-                    backgroundColor:'rgb(235, 92, 156)',
+                    marginTop:20,
+                    backgroundColor:'rgb(241, 140, 142)',
                     paddingVertical:11,
                     borderRadius:23
                 }}>
@@ -94,7 +100,7 @@ export default class Login extends React.Component{
                     alignSelf:"center",
                     color:'rgb(63, 73, 152)',
                     fontFamily:"SemiBold",
-                    paddingVertical:30,
+                    paddingVertical:25,
                     textDecorationLine: 'underline'
                   }}
                 >Бүртгүүлэх
@@ -107,9 +113,21 @@ export default class Login extends React.Component{
                     alignSelf:"center",
                     color:'rgb(63, 73, 152)',
                     fontFamily:"SemiBold",
-                    paddingVertical:0
                   }}
                 >Нууц үгээ мартсан уу?
+                </Text>
+
+                <Text      
+                  onPress={()=>navigate('Home')}
+                  style={{
+                    alignSelf:"center",
+                    color:'#333',
+                    fontFamily:"SemiBold",
+                    fontSize: 20,
+                    marginTop: 18,
+                    paddingVertical:25
+                  }}
+                >X
                 </Text>
             </View>
         )

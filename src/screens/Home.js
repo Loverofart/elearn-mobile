@@ -10,7 +10,7 @@ export default class Home extends React.Component{
             source={require('../images/Home.png')}
             style={{width:"100%",height:"100%"}}
            >
-               <ScrollView>
+                <ScrollView>
                    <View style={{
                        width:"100%",
                        alignItems:"flex-end",

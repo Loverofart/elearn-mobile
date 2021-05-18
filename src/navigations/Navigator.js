@@ -12,8 +12,8 @@ const stackNavigatorOptions ={
     headerShown:false
 }
 const AppNavigator = createStackNavigator({
-    // Login:{screen:Login},
-    // Register:{screen:Register},
+    Login:{screen:Login},
+    Register:{screen:Register},
     Home:{screen:Home},
     Cources:{screen:Cources},
     Xd:{screen:Xd},

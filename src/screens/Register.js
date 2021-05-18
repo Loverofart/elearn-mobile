@@ -38,7 +38,7 @@ export default class Register extends React.Component{
                     alignItems:"center",
                     marginHorizontal:50,
                     borderWidth:2,
-                    marginTop:50,
+                    marginTop:30,
                     paddingHorizontal:5,
                     borderColor:'rgb(63, 73, 152)',
                     borderRadius:23,
@@ -97,7 +97,7 @@ export default class Register extends React.Component{
                     alignItems:"center",
                     justifyContent:"center",
                     marginTop:30,
-                    backgroundColor:'rgb(235, 92, 156)',
+                    backgroundColor:'rgb(241, 140, 142)',
                     paddingVertical:10,
                     borderRadius:23
                 }}>
@@ -112,10 +112,24 @@ export default class Register extends React.Component{
                     alignSelf:"center",
                     color:'rgb(63, 73, 152)',
                     fontFamily:"SemiBold",
-                    paddingVertical:30,
+                    paddingVertical:15,
+                    marginTop: 10,
                     textDecorationLine: 'underline'
                   }}
                 >Нэвтрэх
+                </Text>
+
+                <Text      
+                  onPress={()=>navigate('Home')}
+                  style={{
+                    alignSelf:"center",
+                    color:'#333',
+                    fontFamily:"SemiBold",
+                    fontSize: 20,
+                    marginTop: 0,
+                    paddingVertical:25
+                  }}
+                >X
                 </Text>
             </View>
         )
