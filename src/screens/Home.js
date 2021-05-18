@@ -31,12 +31,13 @@ export default class Home extends React.Component{
                    </View>
                    <Text style={{
                        paddingHorizontal:20,
-                       fontSize:35,
+                       marginRight: 20,
+                       fontSize:25,
                        paddingTop:40,
                        fontFamily:"Bold",
                        color:"#FFF"
                    }}>
-                       Сайн уу Минжин!
+                       Шинэ зүйл сурахдаа бэлэн үү?
                    </Text>
 
                    <View style={{
@@ -54,7 +55,7 @@ export default class Home extends React.Component{
                             style={{
                                 fontFamily:"Bold",
                                 fontSize:12,
-                                width:280,
+                                width:320,
                                 paddingHorizontal:12
                             }}
                        />
@@ -89,7 +90,7 @@ export default class Home extends React.Component{
                                     backgroundColor:"#f58084",
                                     alignItems:"center",
                                     marginTop:20,
-                                    width:150,
+                                    width:120,
                                     paddingVertical:10,
                                     borderRadius:14,
                                     paddingHorizontal:10
