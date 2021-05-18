@@ -1,12 +1,13 @@
 import React from 'react';
 import {Text,View,Image, TextInput} from 'react-native';
 import Icon from '@expo/vector-icons/AntDesign';
-
+import { TouchableWithoutFeedback, Keyboard} from 'react-native';
 export default class Login extends React.Component{
 
     render(){
         const {navigate} = this.props.navigation
         return(
+          <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
             <View style={{backgroundColor:"#FFF",height:"100%"}}>
                 <Image source ={require('../images/10.png')}
                     style={{width:"100%",height:"50%"}}/>
@@ -130,6 +131,8 @@ export default class Login extends React.Component{
                 >X
                 </Text>
             </View>
+          </TouchableWithoutFeedback>
+            
         )
     }
 }
